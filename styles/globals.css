@@ -14,3 +14,22 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  min-height: 150vh;
+}
+
+.unblur {
+  animation-name: unblur;
+  animation-duration: 0.5s;
+  animation-play-state: forwards;
+}
+
+@keyframes unblur {
+  from {
+    filter: blur(100px);
+  }
+  to {
+    filter: blur(0px);
+  }
+}
